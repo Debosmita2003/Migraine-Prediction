@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Migraine Prediction</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+	<section>
+		<div class="logout"><h5><a href="{{url_for('login')}}">LogOut</a></h5></div>
+		<div class="container">
+			<h1>Migraine Prediction</h1>
+			<form class="row g-3 needs-validation" novalidate action="/predict" method="post">
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip04" class="form-label">Age</label>
+					<input type="text" class="form-control" name="b" id="validationTooltip01" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip02" class="form-label">Duration</label>
+					<input type="text" class="form-control" name="c" id="validationTooltip02" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltipUsername" class="form-label">Frequency</label>
+					<input type="text" class="form-control" name="d" id="validationTooltipUsername"
+						aria-describedby="validationTooltipUsernamePrepend" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip03" class="form-label">Location</label>
+					<input type="text" class="form-control" name="e" id="validationTooltip03" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Character</label>
+					<input type="text" class="form-control" name="f" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Intensity</label>
+					<input type="text" class="form-control" name="g" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Nausea</label>
+					<input type="text" class="form-control" name="h" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Vomit</label>
+					<input type="text" class="form-control" name="i" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Phonophobia</label>
+					<input type="text" class="form-control" name="j" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Photophobia</label>
+					<input type="text" class="form-control" name="k" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Visual</label>
+					<input type="text" class="form-control" name="l" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Sensory</label>
+					<input type="text" class="form-control" name="m" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Dysphasia</label>
+					<input type="text" class="form-control" name="n" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Dysarthria</label>
+					<input type="text" class="form-control" name="o" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Vertigo</label>
+					<input type="text" class="form-control" name="p" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Tinnitus</label>
+					<input type="text" class="form-control" name="q" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Hypoacusis</label>
+					<input type="text" class="form-control" name="r" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Diplopia</label>
+					<input type="text" class="form-control" name="s" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Defect</label>
+					<input type="text" class="form-control" name="t" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Ataxia</label>
+					<input type="text" class="form-control" name="u" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Conscience</label>
+					<input type="text" class="form-control" name="v" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">Paresthesia</label>
+					<input type="text" class="form-control" name="w" id="validationTooltip05" required>
+				</div>
+				<div class="col-md-2 position-relative">
+					<label for="validationTooltip05" class="form-label">DPF</label>
+					<input type="text" class="form-control" name="x" id="validationTooltip05" required>
+				</div>
+				<div class="col-12">
+					<button type="submit" class="btn btn-primary">Predict</button>
+				</div>
+			</form>
+		</div>
+	</section>
+</body>
+</html>

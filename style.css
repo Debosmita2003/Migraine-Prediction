@@ -1,0 +1,68 @@
+/* Store this code in 'style.css' file inside the 'static' folder*/
+
+			.header{
+				padding: 5px 120px;
+				width: 150px;
+				height: 70px;
+				background-color: #236B8E;
+			}
+		
+			.border{
+				padding: 80px 50px;
+				width: 400px;
+				height: 450px;
+				border: 1px solid #236B8E;
+				border-radius: 5px;
+				background-color: #9AC0CD;
+				box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+			}
+
+			.btn {
+				padding: 10px 40px;
+				background-color: #236B8E;
+				color: #FFFFFF;
+				font-style: oblique;
+				font-weight: bold;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			input:hover{
+				box-shadow: 0 0 20px white;
+			}
+			.btn:hover{
+				box-shadow: 0 0 20px white;
+			}
+
+			.textbox{
+				padding: 10px 40px;
+				background-color: #236B8E;
+				color: #FFFFFF;
+				border-radius: 10px;
+			}
+				
+			::placeholder {
+				color: #FFFFFF;
+				opacity: 1;
+				font-style: oblique;
+				font-weight: bold;
+			}
+
+			.word{
+				color: #FFFFFF;
+				font-style: oblique;
+				font-weight: bold;
+			}
+
+			.bottom{
+				color: #236B8E;
+				font-style: oblique;
+				font-weight: bold;
+			}
+			.signUP{
+				color: #236B8E;
+				font-style: oblique;
+				font-weight: bold;
+			}
+			.signUP:hover{
+				color: purple;
+			}

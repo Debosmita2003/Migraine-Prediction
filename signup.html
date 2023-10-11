@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='signup.css') }}">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="header">
+                <h2>Sign Up</h2>
+            </div>
+            <form class="#" action="/insert" method="post">
+                <div class="col-md-3">
+                    <label for="inputName" class="form-label">Name</label>
+					<input type="text" class="form-control" name="name" id="inputName">
+                </div>
+                <div class="col-md-3">
+                    <label for="inputUserName" class="form-label">Userame</label>
+					<input type="text" class="form-control" name="username" id="inputUser">
+                </div>
+                <div class="col-md-3">
+					<label for="inputPhoneNumber" class="form-label">Phone number</label>
+					<input type="tel" class="form-control" name="phone" id="inputPhone" maxlength="10">
+				</div>
+                <div class="col-md-3">
+					<label for="inputCity" class="form-label">Email</label>
+					<input type="email" class="form-control" name="mail" id="inputState">
+				</div>
+                <div class="col-md-3">
+					<label for="inputCity" class="form-label">State</label>
+					<input type="text" class="form-control" name="state" id="inputState">
+				</div>
+                <div class="col-md-3">
+					<label for="inputPassword4" class="form-label">Password</label>
+					<input type="password" class="form-control" name="password" id="inputPassword4">
+				</div>
+				<div class="col-12">
+					<button type="submit" class="btn">Sign up</button>
+				</div>
+            </form>
+            <div class="newUser">
+                <p class="SILEBEL">Already have an account?</p><a class="signIn" href="{{url_for('login')}}">Sign in here</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

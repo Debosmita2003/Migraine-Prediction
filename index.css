@@ -1,0 +1,35 @@
+  @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=Kite+One&display=swap');
+
+.logout{
+	position: fixed;
+	margin-top: -43%;
+	margin-left: 90%;
+}
+.container{
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	background-color: aliceblue;
+}
+section{
+	background-color: bisque;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+}
+form{
+	padding-top: 30px;
+}
+section .container h1{
+	font-family: 'Kite One', sans-serif;
+	text-align: center;
+	border-bottom: 1px solid #000000;
+	font-size: 36px;
+	width: 100%;
+	padding-bottom: 10px;
+}
+.col-12{
+	padding-top: 15px;
+	text-align: center;
+}

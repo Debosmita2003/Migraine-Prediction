@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Slab:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+.header{
+    margin-bottom: 9px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: navy;
+    border-bottom: 3px solid blue;
+}
+section{
+    display: flexbox;
+    position: absolute;
+    margin: 10vh 38vw;
+    border-radius: 9px;
+    align-items: center;
+    background-color: aliceblue;
+    transition: .8s;
+    width: 30vw;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-top: 4px solid blue;
+}
+div{
+    padding: 15px;
+}
+.container{
+    border-radius: 9px;
+}
+.col-md-3{
+    text-align: justify;
+    align-items: center;
+}
+.form-label{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: darkblue;
+    display: inline-block;
+}
+input{
+    border: 0;
+    border-bottom: 3px solid navy;
+    background-color: aliceblue;
+    font-size: 18px;
+}
+input:hover{
+    border: 3px solid rgb(37, 78, 214);
+}
+.col-12{
+    text-align: center;
+}
+.btn{
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px 120px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgba(10, 10, 202, 0.863);
+    color: aliceblue;
+    border: 0;
+    border-radius: 20px;
+    transition: .3s;
+}
+.btn:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px rgba(10, 10, 202, 0.863);
+}
+.newUser{
+    font-family: 'Roboto Slab', serif;
+    display: flexbox;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+}
+.SILEBEL{
+    display: inline-flex;
+    padding-top: 10px;
+}
+.signIn{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+.signIn:hover{
+    color: purple;
+}
